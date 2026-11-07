@@ -42,6 +42,7 @@ include 'includes/header.php';
         >
         <h1 class="mb-3 text-3xl font-bold"><?= htmlspecialchars($flavor['name'], ENT_QUOTES, 'UTF-8') ?></h1>
         <p class="mb-6 text-gray-700"><?= htmlspecialchars($flavor['description'], ENT_QUOTES, 'UTF-8') ?></p>
+        <p class="mb-6 text-xl font-bold">Prijs: €2</p>
     <?php else: ?>
         <h1 class="mb-3 text-3xl font-bold">Smaak niet gevonden</h1>
         <p class="mb-6 text-gray-700">Kies een smaak uit het overzicht.</p>
