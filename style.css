@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    color: #263238;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background: #f7a8c4;
+}
+
+.site-title {
+    color: #263238;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation a {
+    color: #263238;
+    text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a[aria-current="page"] {
+    text-decoration: underline;
+}
+
+.main-content {
+    flex: 1;
+    width: min(100% - 2rem, 900px);
+    margin: 2rem auto;
+}
+
+.intro {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background: #fff1f6;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: 0.3rem;
+    background: #d94f83;
+    color: white;
+    text-decoration: none;
+}
+
+.flavor-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+}
+
+.flavor-card {
+    overflow: hidden;
+    margin: 0;
+    border-radius: 0.5rem;
+    background: #fff1f6;
+    text-align: center;
+}
+
+.flavor-card img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.flavor-card figcaption {
+    padding: 0.75rem;
+    font-weight: bold;
+}
+
+.site-footer {
+    padding: 1rem;
+    background: #f3e5eb;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+@media (max-width: 560px) {
+    .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .navigation {
+        gap: 0.75rem;
+    }
+}
